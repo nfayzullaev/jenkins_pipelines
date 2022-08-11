@@ -1,11 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('stage1') {
       steps {
-        echo 'Hello $Name'
+        echo 'Hello $KEY'
       }
     }
 
+  }
+  environment {
+    KEY = 'VALUE'
   }
 }
